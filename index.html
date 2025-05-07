@@ -3,158 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>فرزاد قاسمیان | Farzad Ghasemian</title>
+  <title>فرزاد قاسمیان | HamiPos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.8;
-      background: #f9f9f9;
-      color: #333;
+      font-family: Tahoma, sans-serif;
+      background-color: #f5f5f5;
     }
     .container {
       max-width: 800px;
       margin: auto;
       padding: 20px;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contact {
-      font-weight: bold;
-      color: #007BFF;
-    }
-    ul {
-      padding-right: 20px;
-    }
-    .en, .fa {
-      display: none;
-    }
-    .lang-switch {
+    .logo, .profile, .lang-switch, .form-section {
       text-align: center;
-      margin: 20px 0;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 160px;
+    }
+    .profile img {
+      width: 130px;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
     .lang-switch button {
-      padding: 10px 20px;
+      padding: 10px 15px;
       margin: 0 5px;
-      cursor: pointer;
       font-weight: bold;
+      cursor: pointer;
       border: none;
       background: #007BFF;
       color: white;
       border-radius: 5px;
     }
+    .fa-lang, .en-lang {
+      display: none;
+    }
     .rtl { direction: rtl; text-align: right; }
     .ltr { direction: ltr; text-align: left; font-family: Arial, sans-serif; }
+    h1, h2 {
+      color: #333;
+    }
+    ul {
+      padding-right: 20px;
+    }
+    .contact-buttons a {
+      margin: 5px;
+      display: inline-block;
+    }
+    .contact-buttons button {
+      padding: 10px 15px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .btn-call { background: #28a745; }
+    .btn-wa { background: #25D366; }
+    .btn-tg { background: #0088cc; }
+    .btn-ig { background: #C13584; }
+
+    form input, form textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <div class="logo">
+      <img src="HAMIPOS.png" alt="لوگو HamiPos">
+    </div>
+
+    <div class="profile">
+      <img src="IMG_0522.jpeg" alt="Farzad Ghasemian">
+      <h1>فرزاد قاسمیان</h1>
+      <p>بنیان‌گذار برند HamiPos</p>
+    </div>
+
     <div class="lang-switch">
       <button onclick="switchLang('fa')">فارسی</button>
       <button onclick="switchLang('en')">English</button>
     </div>
 
-    <div class="fa rtl">
-      <h1>فرزاد قاسمیان</h1>
-      <p><strong>بنیان‌گذار برند HamiPos</strong> | مشاور تخصصی صنعت غذا و فناوری اطلاعات</p>
+    <!-- فارسی -->
+    <div class="fa-lang rtl">
+      <h2>معرفی کوتاه</h2>
+      <p>با بیش از دو دهه تجربه در فناوری اطلاعات و نرم‌افزارهای تخصصی رستورانی، بنیان‌گذار برند HamiPos.</p>
 
-      <div class="section">
-        <h2>معرفی کوتاه</h2>
-        <p>
-          با بیش از دو دهه سابقه در فناوری اطلاعات و نرم‌افزارهای تخصصی رستورانی، فرزاد قاسمیان بنیان‌گذار برند HamiPos است. او با بیش از ۳۰۰ کسب‌وکار در زمینه‌های حسابداری، آموزش، برندینگ، کارتخوان، نرم‌افزار رستورانی و مشاوره مدیریتی همکاری داشته.
-        </p>
+      <h2>سوابق کاری</h2>
+      <ul>
+        <li>شروع از ۱۳۸۲ با موبایل و سیستم امنیتی</li>
+        <li>نماینده ایرانسل تا ۱۳۹۵</li>
+        <li>از ۱۳۹۶ تمرکز بر صنعت غذا</li>
+      </ul>
+
+      <h2>پروژه‌های تصویری</h2>
+      <ul>
+        <li>ستایش ۳، تابستان با امید، شرایط، پایتخت ۶، زخم کاری، آقازاده</li>
+      </ul>
+
+      <h2>راه‌های ارتباطی</h2>
+      <div class="contact-buttons">
+        <a href="tel:09112936750"><button class="btn-call"><i class="fa fa-phone"></i> تماس</button></a>
+        <a href="https://wa.me/989359159006" target="_blank"><button class="btn-wa"><i class="fab fa-whatsapp"></i> واتساپ</button></a>
+        <a href="https://t.me/+989359159006" target="_blank"><button class="btn-tg"><i class="fab fa-telegram"></i> تلگرام</button></a>
+        <a href="https://instagram.com/farzadghasemiyan" target="_blank"><button class="btn-ig"><i class="fab fa-instagram"></i> اینستاگرام</button></a>
       </div>
 
-      <div class="section">
-        <h2>سوابق کاری</h2>
-        <ul>
-          <li>شروع فعالیت از ۱۳۸۲ با فروشگاه سیستم‌های امنیتی و موبایل سپهر</li>
-          <li>نماینده رسمی ایرانسل تا ۱۳۹۵</li>
-          <li>از ۱۳۹۶ تمرکز بر صنعت غذا، نماینده رسمی سپیدز، داده‌پردازی پارسیان، تجارت الکترونیک پارسیان، سامان کیش</li>
-          <li>همکاری با شرکت‌های حافظه برتر، شاتل، رایتل، ایرانسل</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>پروژه‌های سینمایی و تلویزیونی</h2>
-        <ul>
-          <li>ستایش ۳، تابستان با امید، شرایط خاص، پایتخت ۶، زخم کاری ۳ و ۴، آقازاده</li>
-          <li>جانشین تولید، مدیر تولید، جانشین تدارکات، تدارکات</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>رستوران‌های شاخص</h2>
-        <ul>
-          <li>برگر بار احمدرضا عابدزاده، استارتن نوشهر (علی دایی)</li>
-          <li>رناتو، برادران، فرزین، کباب ترش، سریکا، ژوان، گستو، کالیدو، خاور خانم و...</li>
-        </ul>
-      </div>
-
-      <div class="section contact">
-        شماره تماس: ۰۹۱۱۲۹۳۶۷۵۰ - ۰۹۳۵۹۱۵۹۰۰۶
+      <div class="form-section">
+        <h2>فرم تماس</h2>
+        <form action="https://formspree.io/f/xwkgrgyg" method="POST">
+          <input type="text" name="name" placeholder="نام شما" required>
+          <input type="email" name="email" placeholder="ایمیل" required>
+          <textarea name="message" placeholder="پیام شما" rows="4" required></textarea>
+          <button type="submit">ارسال پیام</button>
+        </form>
       </div>
     </div>
 
-    <div class="en ltr">
-      <h1>Farzad Ghasemian</h1>
-      <p><strong>Founder of HamiPos</strong> | IT & F&B Technology Specialist</p>
+    <!-- انگلیسی -->
+    <div class="en-lang ltr">
+      <h2>Short Bio</h2>
+      <p>IT & restaurant software expert with 20+ years of experience. Founder of HamiPos.</p>
 
-      <div class="section">
-        <h2>Summary</h2>
-        <p>
-          With 20+ years of experience in IT and restaurant software, Farzad Ghasemian is the founder of HamiPos. He has collaborated with over 300 businesses in fields like accounting, staff training, branding, POS systems, and tech consulting.
-        </p>
+      <h2>Career</h2>
+      <ul>
+        <li>Started in 2003 in mobile/security systems</li>
+        <li>Irancell rep until 2015</li>
+        <li>Since 2016: focused on food & tech</li>
+      </ul>
+
+      <h2>Film & TV Projects</h2>
+      <ul>
+        <li>Setayesh 3, Summer with Hope, Sharayet, Paytakht 6, Zakhm Kari, Aghazadeh</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <div class="contact-buttons">
+        <a href="tel:09112936750"><button class="btn-call"><i class="fa fa-phone"></i> Call</button></a>
+        <a href="https://wa.me/989359159006" target="_blank"><button class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</button></a>
+        <a href="https://t.me/+989359159006" target="_blank"><button class="btn-tg"><i class="fab fa-telegram"></i> Telegram</button></a>
+        <a href="https://instagram.com/farzadghasemiyan" target="_blank"><button class="btn-ig"><i class="fab fa-instagram"></i> Instagram</button></a>
       </div>
 
-      <div class="section">
-        <h2>Work Experience</h2>
-        <ul>
-          <li>Started in 2003 with Sepehr Mobile & Security Systems</li>
-          <li>Official Irancell agent until 2015</li>
-          <li>Since 2016: focused on F&B tech, agent for SepidZ, Parsian Data, PEC, Saman Kish</li>
-          <li>Worked with Shatel, Rightel, Irancell, Top Memory, and more</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Film & TV Projects</h2>
-        <ul>
-          <li>Setayesh 3, Summer with Omid, Special Conditions, Paytakht 6, Zakhm Kari 3 & 4, Aghazadeh</li>
-          <li>Roles: Assistant Producer, Logistics Manager, Production Manager</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Restaurant Partners</h2>
-        <ul>
-          <li>Burger Bar (Ahmad Reza Abedzadeh), Starten Nowshahr (Ali Daei)</li>
-          <li>Renato, Baradaran, Farzin, Kabab Torsh, Serika, Javan Café, Khavar Khanom and more</li>
-        </ul>
-      </div>
-
-      <div class="section contact">
-        Contact: +98 911 293 6750 - +98 935 915 9006
+      <div class="form-section">
+        <h2>Contact Form</h2>
+        <form action="https://formspree.io/f/xwkgrgyg" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </div>
+
   </div>
 
   <script>
     function switchLang(lang) {
-      document.querySelector('.fa').style.display = lang === 'fa' ? 'block' : 'none';
-      document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+      document.querySelector('.fa-lang').style.display = lang === 'fa' ? 'block' : 'none';
+      document.querySelector('.en-lang').style.display = lang === 'en' ? 'block' : 'none';
       document.body.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
     }
-
-    // نمایش پیش‌فرض فارسی
-    switchLang('fa');
+    switchLang('fa'); // پیش‌فرض فارسی
   </script>
 </body>
 </html>
